@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auto Point Car Removal – Top Cash for Cars &amp; Trucks in Perth, WA</title>
+  <meta name="description" content="Perth's #1 car removal service. Get top cash for your car, truck, ute or 4WD anywhere in Perth, WA. Free removal, same-day service, all makes and conditions accepted. Call 0429 575 955." />
+  <meta name="keywords" content="cash for cars Perth, car removal Perth WA, sell my car Perth, scrap car removal Perth, Isuzu removal Perth, car wreckers Perth" />
+  <link rel="canonical" href="https://autopointcarremoval.com.au/" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Structured Data – Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoDealer",
+    "name": "Auto Point Car Removal",
+    "telephone": "0429575955",
+    "email": "info@autopointcarremoval.com.au",
+    "address": { "@type": "PostalAddress", "addressLocality": "Perth", "addressRegion": "WA", "addressCountry": "AU" },
+    "url": "https://autopointcarremoval.com.au/",
+    "openingHours": ["Mo-Fr 08:00-17:00", "Sa 08:00-14:00"],
+    "priceRange": "$$",
+    "description": "Perth's trusted car removal and used auto parts specialist. Top cash paid for all makes and models across the Perth metro area."
+  }
+  </script>
+
+  <style>
+    /* ── Hero ── */
+    .home-hero {
+      background: linear-gradient(112deg, #07172e 0%, #1a3b6d 55%, #0d2140 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    /* Isuzu/truck photographic layer */
+    .home-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to right, rgba(7,23,46,0.82) 0%, rgba(10,28,58,0.55) 55%, rgba(7,23,46,0.30) 100%),
+        url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=1600&q=75') center 45% / cover no-repeat;
+      z-index: 0;
+    }
+    /* Warm Perth golden-hour rim light */
+    .home-hero .perth-glow {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 60% at 75% 55%, rgba(220,140,40,0.12) 0%, transparent 70%);
+      z-index: 1;
+      pointer-events: none;
+    }
+    .home-hero .hero-inner { position: relative; z-index: 2; }
+
+    /* ── Full-width hero layout (phone-first) ── */
+    .hero-full { max-width: 680px; }
+
+    /* ── Big phone CTA ── */
+    .hero-phone-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      background: var(--red);
+      color: var(--white);
+      border-radius: var(--radius-sm);
+      padding: 18px 32px;
+      font-family: var(--font-heading);
+      font-weight: 900;
+      font-size: 1.25rem;
+      letter-spacing: 0.01em;
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 6px 28px rgba(236,32,41,.40);
+      text-decoration: none;
+    }
+    .hero-phone-primary:hover {
+      background: var(--red-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 36px rgba(236,32,41,.50);
+    }
+    .hero-phone-primary .ph-icon {
+      width: 28px; height: 28px;
+      background: rgba(255,255,255,.18);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .hero-phone-primary .ph-icon svg { width: 15px; height: 15px; }
+
+    .hero-availability {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 16px;
+      font-size: 0.82rem;
+      color: rgba(255,255,255,.65);
+    }
+    .hero-availability .dot {
+      width: 7px; height: 7px;
+      background: #4ade80;
+      border-radius: 50%;
+      animation: pulse-dot 2s infinite;
+      flex-shrink: 0;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.4; }
+    }
+
+    /* ── Price badge ── */
+    .price-highlight {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(236,32,41,.18);
+      border: 1px solid rgba(236,32,41,.35);
+      border-radius: var(--radius-sm);
+      padding: 10px 18px;
+      margin-bottom: 24px;
+    }
+    .price-tag   { font-family: var(--font-heading); font-weight: 900; font-size: 1.4rem; color: var(--red); }
+    .price-label { font-size: 0.82rem; color: rgba(255,255,255,.72); }
+
+    /* ── Stats strip ── */
+    .stat-pills {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 36px;
+      padding-top: 28px;
+      border-top: 1px solid rgba(255,255,255,.12);
+    }
+    .stat-pill   { display: flex; align-items: center; gap: 10px; }
+    .stat-num    { font-family: var(--font-heading); font-weight: 900; font-size: 1.5rem; color: var(--white); }
+    .stat-text   { font-size: 0.72rem; color: rgba(255,255,255,.58); line-height: 1.3; }
+    .stat-divider { width: 1px; height: 36px; background: rgba(255,255,255,.15); }
+
+    /* ── Why section ── */
+    .why-section { background: var(--blue); position: relative; overflow: hidden; }
+    .why-section::before {
+      content: ''; position: absolute; top: -80px; right: -80px;
+      width: 400px; height: 400px; border-radius: 50%;
+      background: rgba(236,32,41,.07); pointer-events: none;
+    }
+    .why-section::after {
+      content: ''; position: absolute; bottom: -100px; left: -60px;
+      width: 320px; height: 320px; border-radius: 50%;
+      background: rgba(255,255,255,.04); pointer-events: none;
+    }
+    .why-inner {
+      position: relative; z-index: 1;
+      display: grid; grid-template-columns: 1fr 1.4fr; gap: 64px; align-items: center;
+    }
+    .why-text h2  { color: var(--white); margin-bottom: 14px; }
+    .why-text p   { color: rgba(255,255,255,.75); font-size: 0.93rem; line-height: 1.75; margin-bottom: 28px; }
+    .suburbs-section { background: var(--off-white); }
+
+    /* ── Quote section (below fold) ── */
+    .quote-section { background: var(--blue-dark); }
+    .quote-layout  { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+    .quote-pitch h2  { color: var(--white); margin-bottom: 14px; }
+    .quote-pitch p   { color: rgba(255,255,255,.75); font-size: 0.93rem; line-height: 1.75; margin-bottom: 24px; }
+    .quote-pitch ul.quick-list li {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 0.88rem; color: rgba(255,255,255,.8); margin-bottom: 10px;
+    }
+    .quote-pitch ul.quick-list li::before {
+      content: '✓'; width: 20px; height: 20px; background: var(--red); color: white;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 0.7rem; font-weight: 900; flex-shrink: 0;
+    }
+    .quote-card-dark { background: var(--white); border-radius: var(--radius-lg); padding: 32px 28px; box-shadow: var(--shadow-lg); }
+    .quote-card-dark h3  { font-size: 1.1rem; font-weight: 800; color: var(--blue); margin-bottom: 4px; }
+    .quote-card-dark > p { font-size: 0.82rem; color: var(--mid-grey); margin-bottom: 20px; }
+
+    .google-rating {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--white); border: 1px solid var(--light-grey);
+      border-radius: var(--radius-sm); padding: 8px 16px;
+      font-size: 0.85rem; font-weight: 700; color: var(--text-dark); margin-bottom: 12px;
+    }
+    .google-stars { color: #fbbc04; letter-spacing: 1px; }
+
+    @media (max-width: 1024px) {
+      .why-inner   { grid-template-columns: 1fr; gap: 40px; }
+      .quote-layout { grid-template-columns: 1fr; gap: 36px; }
+    }
+    @media (max-width: 768px) {
+      .hero-phone-primary { font-size: 1.05rem; padding: 16px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════════════ -->
+<nav class="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Auto Point Car Removal – Home">
+        <img src="brand_asset/AUTO POINT LOGO.png" alt="Auto Point Car Removal Perth" width="180" height="54" />
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="cash-for-cars.html">Cash For Cars</a></li>
+        <li><a href="auto-parts.html">Auto Parts</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <a href="tel:0429575955" class="btn btn-red nav-cta">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .82h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 15h-.08z"/></svg>
+        Call 0429 575 955
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════
+     HERO – Phone-First, Perth / Isuzu imagery
+═══════════════════════════════════════════ -->
+<section class="hero home-hero" aria-label="Hero – Top Cash for Cars in Perth">
+  <div class="perth-glow"></div>
+  <div class="container">
+    <div class="hero-inner" style="padding: 88px 0 80px;">
+      <div class="hero-two-col">
+      <div class="hero-full">
+
+        <div class="hero-badge">Perth &amp; WA's Trusted Car Removal Specialists</div>
+
+        <div class="price-highlight">
+          <span class="price-tag">Up to $9,999</span>
+          <span class="price-label">Cash paid on the spot — no waiting, no fuss</span>
+        </div>
+
+        <h1>Top Cash for Cars,<br />Trucks &amp; Utes<br />in <span>Perth, WA</span></h1>
+
+        <p class="hero-sub">
+          We buy all makes and models — Isuzu, Toyota, Ford, Holden and everything in between.
+          Running or not, we pay top dollar and collect from anywhere across Perth metro,
+          absolutely free of charge.
+        </p>
+
+        <!-- PRIMARY CTA: Phone -->
+        <a href="tel:0429575955" class="hero-phone-primary" aria-label="Call Auto Point Car Removal on 0429 575 955">
+          <span class="ph-icon">
+            <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .82h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 15h-.08z"/></svg>
+          </span>
+          Call 0429 575 955 — Free Instant Quote
+        </a>
+
+        <div class="hero-availability">
+          <span class="dot"></span>
+          Available Mon–Fri 8am–5pm &nbsp;·&nbsp; Sat 8am–2pm &nbsp;·&nbsp; Same-day collection
+        </div>
+
+        <!-- Secondary action -->
+        <p style="margin-top:22px;font-size:0.85rem;color:rgba(255,255,255,.55);">
+          Prefer to submit details online?
+          <a href="#get-a-quote" style="color:rgba(255,255,255,.75);text-decoration:underline;text-underline-offset:3px;">Fill in the quick form below</a>
+        </p>
+
+        <div class="stat-pills">
+          <div class="stat-pill">
+            <div>
+              <div class="stat-num">5,000+</div>
+              <div class="stat-text">Vehicles<br />Removed</div>
+            </div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-pill">
+            <div>
+              <div class="stat-num">Same Day</div>
+              <div class="stat-text">Collection<br />Available</div>
+            </div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-pill">
+            <div>
+              <div class="stat-num">4.9★</div>
+              <div class="stat-text">Google<br />Rating</div>
+            </div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-pill">
+            <div>
+              <div class="stat-num">FREE</div>
+              <div class="stat-text">Towing &amp;<br />Removal</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ── Right-side Phone CTA Card ── -->
+      <div class="hero-cta-card">
+        <h3 class="hcc-title">Get a Free Cash Quote</h3>
+        <p class="hcc-sub">One quick call — we'll give you an instant offer</p>
+
+        <a href="tel:0429575955" class="hcc-phone-btn" aria-label="Call Auto Point Car Removal on 0429 575 955">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .82h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 15h-.08z"/></svg>
+          0429 575 955
+        </a>
+
+        <ul class="hcc-trust-list">
+          <li>
+            <span class="hcc-icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            </span>
+            <span>Highest cash rates in Perth</span>
+          </li>
+          <li>
+            <span class="hcc-icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </span>
+            <span>Free same-day removal</span>
+          </li>
+          <li>
+            <span class="hcc-icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .82h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 15h-.08z"/></svg>
+            </span>
+            <span>Quick over-the-phone quote</span>
+          </li>
+          <li>
+            <span class="hcc-icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </span>
+            <span>No hidden fees, ever</span>
+          </li>
+        </ul>
+
+        <p class="hcc-prefer-email">Prefer email?</p>
+        <a href="mailto:info@autopointcarremoval.com.au" class="hcc-email-link">info@autopointcarremoval.com.au</a>
+      </div>
+
+      </div><!-- /hero-two-col -->
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     TRUST BAR
+═══════════════════════════════════════════ -->
+<div class="trust-bar" role="complementary" aria-label="Key trust signals">
+  <div class="container">
+    <div class="trust-bar-inner">
+      <div class="trust-item"><div class="trust-item-icon"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div><span>Best Price Guaranteed</span></div>
+      <div class="trust-item"><div class="trust-item-icon"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div><span>Free Car Removal</span></div>
+      <div class="trust-item"><div class="trust-item-icon"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><span>Same-Day Collection</span></div>
+      <div class="trust-item"><div class="trust-item-icon"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div><span>All Makes &amp; Models</span></div>
+      <div class="trust-item"><div class="trust-item-icon"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><span>All Perth Suburbs</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     HOW IT WORKS
+═══════════════════════════════════════════ -->
+<section class="section-pad" aria-labelledby="how-it-works-heading">
+  <div class="container text-center">
+    <span class="section-label">Simple Process</span>
+    <h2 class="section-title" id="how-it-works-heading">How It Works – 3 Simple Steps</h2>
+    <div class="red-line"></div>
+    <p class="section-sub">Getting rid of your old vehicle in Perth has never been easier. Cash in your hand in as little as a few hours.</p>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num"><span>1</span></div>
+        <h3>Give Us a Ring</h3>
+        <p>Call <strong>0429 575 955</strong> and tell us about your vehicle — make, model, year, and condition. We'll have an offer ready in minutes.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num"><span>2</span></div>
+        <h3>Accept Your Cash Offer</h3>
+        <p>We give you our best price upfront — no lowball offers, no pressure. If you're happy, we'll lock in a pick-up time that suits you.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num"><span>3</span></div>
+        <h3>Get Paid &amp; We Collect</h3>
+        <p>Our team comes to you anywhere in Perth, pays you cash on the spot, and tows the vehicle away. Done — simple as that.</p>
+      </div>
+    </div>
+
+    <div style="margin-top: 40px;">
+      <a href="tel:0429575955" class="btn btn-red btn-lg">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .82h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 15h-.08z"/></svg>
+        Call Now — 0429 575 955
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     WHY CHOOSE US (dark blue)
+═══════════════════════════════════════════ -->
+<section class="why-section section-pad" aria-labelledby="why-heading">
+  <div class="container">
+    <div class="why-inner">
+      <div class="why-text">
+        <span class="section-label">Why Auto Point?</span>
+        <h2 class="section-title white" id="why-heading">Why Perth Trusts Auto Point Car Removal</h2>
+        <div class="red-line left"></div>
+        <p>We've built our reputation across Perth by doing things right — fair prices, fast service, and no hidden surprises. Whether you're in Joondalup, Fremantle, Rockingham, or anywhere across the metro area, we're ready to help.</p>
+        <a href="cash-for-cars.html" class="btn btn-red">Learn More About Cash for Cars</a>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+          <div>
+            <h4>Best Prices Guaranteed</h4>
+            <p>We consistently outbid competitors. Show us a higher offer and we'll beat it — no worries.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+          <div>
+            <h4>Free Car Removal</h4>
+            <p>Zero towing fees — we drive to your location anywhere in Perth metro at no cost to you.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+          <div>
+            <h4>Same-Day Service</h4>
+            <p>Ring before noon and we can usually collect your vehicle that same afternoon.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
+          <div>
+            <h4>All Makes &amp; Models</h4>
+            <p>Cars, trucks, utes, SUVs, 4WDs, vans — Isuzu, Toyota, Ford, Holden and every other make.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div>
+          <div>
+            <h4>Cash Paid on the Spot</h4>
+            <p>No bank transfers, no delays. You receive your payment the moment we collect the vehicle.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+          <div>
+            <h4>Paperwork Handled</h4>
+            <p>We manage all transfer and disposal paperwork so you don't have to lift a finger.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SUBURBS
+═══════════════════════════════════════════ -->
+<section class="suburbs-section section-pad" aria-labelledby="suburbs-heading">
+  <div class="container text-center">
+    <span class="section-label">Coverage Area</span>
+    <h2 class="section-title" id="suburbs-heading">We Come to You — All Perth Suburbs</h2>
+    <div class="red-line"></div>
+    <p class="section-sub">Our team covers the entire Perth metropolitan area across Western Australia. No matter where you are, we'll come to you for free collection.</p>
+
+    <div class="suburbs-grid">
+      <div class="suburb-tag">Perth CBD</div>
+      <div class="suburb-tag">Fremantle</div>
+      <div class="suburb-tag">Joondalup</div>
+      <div class="suburb-tag">Rockingham</div>
+      <div class="suburb-tag">Mandurah</div>
+      <div class="suburb-tag">Armadale</div>
+      <div class="suburb-tag">Midland</div>
+      <div class="suburb-tag">Cannington</div>
+      <div class="suburb-tag">Osborne Park</div>
+      <div class="suburb-tag">Malaga</div>
+      <div class="suburb-tag">Balga</div>
+      <div class="suburb-tag">Belmont</div>
+      <div class="suburb-tag">Canning Vale</div>
+      <div class="suburb-tag">Morley</div>
+      <div class="suburb-tag">Kwinana</div>
+      <div class="suburb-tag">Wanneroo</div>
+      <div class="suburb-tag">Mirrabooka</div>
+      <div class="suburb-tag">Stirling</div>
+      <div class="suburb-tag">Bentley</div>
+      <div class="suburb-tag">Thornlie</div>
+      <div class="suburb-tag">Gosnells</div>
+      <div class="suburb-tag">Claremont</div>
+      <div class="suburb-tag">Subiaco</div>
+      <div class="suburb-tag">Cottesloe</div>
+      <div class="suburb-tag">Ellenbrook</div>
+    </div>
+
+    <p style="margin-top:24px;font-size:0.88rem;color:var(--mid-grey);">
+      Don't see your suburb? <a href="tel:0429575955" style="color:var(--red);font-weight:700;">Give us a ring</a> — we most likely cover your area.
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     GET A QUOTE (below fold — secondary to phone)
+═══════════════════════════════════════════ -->
+<section class="quote-section section-pad" id="get-a-quote" aria-labelledby="quote-heading">
+  <div class="container">
+    <div class="quote-layout">
+      <!-- Left pitch -->
+      <div class="quote-pitch">
+        <span class="section-label">Prefer to Write to Us?</span>
+        <h2 id="quote-heading">Request a Quote Online</h2>
+        <div class="red-line left"></div>
+        <p>
+          Rather call? Dial <a href="tel:0429575955" style="color:var(--red);font-weight:700;">0429 575 955</a> for an instant offer — it's the quickest way to get your cash.
+          Otherwise, fill in your details and we'll ring you back promptly.
+        </p>
+        <ul class="quick-list">
+          <li>No obligation — completely free quote</li>
+          <li>We ring you back fast during business hours</li>
+          <li>Same-day collection available across Perth metro</li>
+          <li>Cash paid on the spot at collection</li>
+        </ul>
+        <a href="tel:0429575955" class="btn btn-red" style="margin-top:24px;">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .82h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 15h-.08z"/></svg>
+          Call Instead — 0429 575 955
+        </a>
+      </div>
+
+      <!-- Right form -->
+      <div>
+        <div class="quote-card-dark">
+          <h3>Quick Quote Form</h3>
+          <p>We'll ring you back within business hours.</p>
+
+          <form id="quoteForm" onsubmit="submitForm(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="year">Year</label>
+                <select id="year" name="year">
+                  <option value="">Select Year</option>
+                  <script>for(let y=2024;y>=1980;y--){document.write(`<option value="${y}">${y}</option>`);}</script>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="make">Make</label>
+                <select id="make" name="make">
+                  <option value="">Select Make</option>
+                  <option>Toyota</option><option>Ford</option><option>Holden</option>
+                  <option>Isuzu</option><option>Hyundai</option><option>Mazda</option>
+                  <option>Mitsubishi</option><option>Nissan</option><option>Subaru</option>
+                  <option>Honda</option><option>Kia</option><option>Volkswagen</option>
+                  <option>BMW</option><option>Mercedes-Benz</option><option>Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="model">Model</label>
+                <input type="text" id="model" name="model" placeholder="e.g. D-Max, Hilux, Ranger" />
+              </div>
+              <div class="form-group">
+                <label for="condition">Condition</label>
+                <select id="condition" name="condition">
+                  <option value="">Select Condition</option>
+                  <option>Running — Good Condition</option>
+                  <option>Running — Needs Repair</option>
+                  <option>Not Running / Damaged</option>
+                  <option>Accident / Written Off</option>
+                  <option>Flood Damaged</option>
+                  <option>Engine / Gearbox Issues</option>
+                  <option>Scrap / Parts Only</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Full name" />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Best Contact Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="04XX XXX XXX" />
+            </div>
+
+            <div class="form-group">
+              <label for="suburb">Suburb / Location</label>
+              <input type="text" id="suburb" name="suburb" placeholder="e.g. Joondalup, Fremantle" />
+            </div>
+
+            <button type="submit" class="btn btn-red btn-full" style="margin-top:6px;">
+              Submit Quote Request
+            </button>
+          </form>
+
+          <p style="font-size:0.75rem;color:var(--mid-grey);text-align:center;margin-top:14px;">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" style="display:inline-block;vertical-align:middle;margin-right:4px;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>Your details are kept private. No spam, ever.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     TESTIMONIALS
+═══════════════════════════════════════════ -->
+<section class="section-pad" aria-labelledby="testimonials-heading">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:48px;">
+      <span class="section-label">Customer Reviews</span>
+      <h2 class="section-title" id="testimonials-heading">What Our Perth Customers Say</h2>
+      <div class="red-line"></div>
+      <div class="google-rating" aria-label="4.9 out of 5 stars on Google">
+        <span class="g-logo" aria-hidden="true">🇬</span>
+        <span class="google-stars" aria-hidden="true">★★★★★</span>
+        <span style="font-weight:900;">4.9</span>
+        <span style="color:var(--mid-grey);font-weight:400;">/ 5 on Google</span>
+      </div>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="stars" aria-label="5 out of 5 stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p>Absolutely brilliant service! Rang in the morning, got a great cash offer for my old Holden, and by arvo it was collected and I had the money in my hand. Couldn't be happier. Highly recommend to any Perth locals!</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" aria-hidden="true">JM</div>
+          <div>
+            <div class="author-name">Jason M.</div>
+            <div class="author-location">Joondalup, WA</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars" aria-label="5 out of 5 stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p>Used Auto Point after my Isuzu D-Max was written off. They offered $600 more than any other wrecker in Perth, came out the very next day, and the whole process was smooth and professional. Will use them again!</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" aria-hidden="true">SR</div>
+          <div>
+            <div class="author-name">Sarah R.</div>
+            <div class="author-location">Fremantle, WA</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars" aria-label="5 out of 5 stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p>Good blokes to deal with. My old Ford Ranger hadn't run in years and was just taking up space in the driveway. Auto Point gave me a fair price, removed it for free and paid me on the day. No dramas at all.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" aria-hidden="true">DK</div>
+          <div>
+            <div class="author-name">David K.</div>
+            <div class="author-location">Rockingham, WA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FAQ
+═══════════════════════════════════════════ -->
+<section class="section-pad" style="background:var(--off-white);" aria-labelledby="faq-heading">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:48px;">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title" id="faq-heading">Frequently Asked Questions</h2>
+      <div class="red-line"></div>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item open">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="true">
+          How much will I get for my car?
+          <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></div>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">We pay up to $9,999 for cars and trucks depending on the make, model, year, and condition. Running vehicles in good condition attract higher offers, but we buy all conditions — even severely damaged or non-running vehicles. Give us a ring on <strong>0429 575 955</strong> for an instant, no-obligation offer.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          Is the towing and removal really free?
+          <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></div>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Yes — 100% free anywhere across the Perth metro area. There are absolutely no hidden fees or deductions from your cash offer for towing or removal. What we quote is what you receive, full stop.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          How quickly can you collect my vehicle?
+          <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></div>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">In most cases we can collect your vehicle the same day — ring us before midday and we'll aim to be there that afternoon. Otherwise we can usually arrange collection the following day. We work around your schedule.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          Do you buy vehicles that aren't running?
+          <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></div>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Absolutely. We buy vehicles in all conditions — running, non-running, damaged, accident-damaged, flood-damaged, fire-damaged, or complete write-offs. No car or truck is too old or too far gone for us to consider.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          What paperwork do I need to sell my vehicle?
+          <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></div>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Generally you'll need proof of identity (driver's licence) and your vehicle's registration papers. We handle all transfer documentation and disposal paperwork — our team will walk you through everything on the day.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          What suburbs do you cover in Perth?
+          <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></div>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">We cover all of Perth's metropolitan area — from Joondalup in the north to Mandurah in the south, and across to the hills. If you're unsure whether we service your suburb, just give us a ring on <strong>0429 575 955</strong> and we'll confirm straight away.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CTA BANNER
+═══════════════════════════════════════════ -->
+<section class="cta-banner" aria-label="Call to action">
+  <div class="container">
+    <div class="cta-banner-inner">
+      <div>
+        <h2>Ready to Sell Your Car or Truck?</h2>
+        <p>One quick call is all it takes — we'll sort the rest for you.</p>
+      </div>
+      <div class="cta-banner-actions">
+        <a href="tel:0429575955" class="btn btn-outline-white btn-lg">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .82h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 15h-.08z"/></svg>
+          Call 0429 575 955
+        </a>
+        <a href="#get-a-quote" class="btn btn-blue btn-lg">Get a Quote Online</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-box">
+          <img src="brand_asset/AUTO POINT LOGO.png" alt="Auto Point Car Removal Perth" width="180" height="52" />
+        </div>
+        <p>Perth's trusted car and truck removal service. We pay top cash for all makes, models, and conditions. Free same-day removal across all Perth suburbs.</p>
+        <a href="tel:0429575955" class="btn btn-red">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .82h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 15h-.08z"/></svg>
+          0429 575 955
+        </a>
+      </div>
+
+      <div>
+        <h4>Contact Info</h4>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .82h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 15h-.08z"/></svg>
+          </div>
+          <a href="tel:0429575955" style="color:rgba(255,255,255,.75);">0429 575 955</a>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+          </div>
+          <a href="mailto:info@autopointcarremoval.com.au" style="color:rgba(255,255,255,.75);">info@autopointcarremoval.com.au</a>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <span style="color:rgba(255,255,255,.75);">18 Burns Rd,<br>Armadale WA 6112,<br>Australia</span>
+        </div>
+      </div>
+
+      <div>
+        <h4>Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="cash-for-cars.html">Cash for Cars</a></li>
+          <li><a href="auto-parts.html">Auto Parts</a></li>
+          <li><a href="cash-for-cars.html">Scrap Truck Removal</a></li>
+          <li><a href="cash-for-cars.html">Truck Recycling</a></li>
+          <li><a href="cash-for-cars.html">Old Truck Buyers</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 style="display:flex;align-items:center;gap:6px;">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" style="color:var(--red);flex-shrink:0;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Business Hours
+        </h4>
+        <div class="footer-hours-row"><span class="day">Monday</span><span>8:00 am – 5:00 pm</span></div>
+        <div class="footer-hours-row"><span class="day">Tuesday</span><span>8:00 am – 5:00 pm</span></div>
+        <div class="footer-hours-row"><span class="day">Wednesday</span><span>8:00 am – 5:00 pm</span></div>
+        <div class="footer-hours-row"><span class="day">Thursday</span><span>8:00 am – 5:00 pm</span></div>
+        <div class="footer-hours-row"><span class="day">Friday</span><span>8:00 am – 5:00 pm</span></div>
+        <div class="footer-hours-row"><span class="day">Saturday</span><span>8:00 am – 3:00 pm</span></div>
+        <div class="footer-hours-row"><span class="day">Sunday</span><span class="closed">Closed</span></div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Auto Point Car Removal. All rights reserved. | ABN: 20 683 285 556 | 18 Burns Rd, Armadale WA 6112</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const navLinks  = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open);
+  });
+
+  // FAQ accordion
+  function toggleFaq(btn) {
+    const item   = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(el => {
+      el.classList.remove('open');
+      el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+    }
+  }
+
+  // Quote form
+  function submitForm(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('button[type="submit"]');
+    btn.textContent = '✓ Request Sent — We\'ll ring you back shortly!';
+    btn.style.background = '#2d7a3a';
+    btn.disabled = true;
+  }
+</script>
+</body>
+</html>
