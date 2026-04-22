@@ -148,6 +148,9 @@
           <h3 style="color:var(--blue);font-size:1.1rem;margin-bottom:6px;font-family:var(--font-heading);">Part Enquiry Form</h3>
           <p style="font-size:0.82rem;color:var(--mid-grey);margin-bottom:20px;">Prefer to call? Dial <a href="tel:0429575955" style="color:var(--red);font-weight:700;">0429 575 955</a> — it's much faster.</p>
           <form onsubmit="submitPartEnquiry(event)">
+            <input type="hidden" name="access_key" value="2a97a3c9-7892-4c5b-a3c4-619f7103c810" />
+            <input type="hidden" name="subject" value="New Part Enquiry — Auto Point Car Removal" />
+            <input type="hidden" name="from_name" value="Auto Point Website" />
             <div class="form-group"><label>Vehicle Year</label><select name="year"><option value="">Select Year</option><script>for(let y=2024;y>=1980;y--){document.write('<option value="'+y+'">'+y+'</option>');}</script></select></div>
             <div class="form-row">
               <div class="form-group"><label>Make</label><select name="make"><option value="">Make</option><option>Isuzu</option><option>Toyota</option><option>Ford</option><option>Holden</option><option>Hyundai</option><option>Mazda</option><option>Mitsubishi</option><option>Nissan</option><option>Subaru</option><option>Honda</option><option>Kia</option><option>Other</option></select></div>
@@ -333,12 +336,30 @@
     document.querySelectorAll('.faq-item').forEach(el => { el.classList.remove('open'); el.querySelector('.faq-question').setAttribute('aria-expanded','false'); });
     if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
   }
-  function submitPartEnquiry(e) {
+  async function submitPartEnquiry(e) {
     e.preventDefault();
-    const btn = e.target.querySelector('button[type="submit"]');
-    btn.textContent = "✓ Enquiry Sent — We'll ring you back shortly!";
-    btn.style.background = '#2d7a3a';
+    const form = e.target;
+    const btn = form.querySelector('button[type="submit"]');
+    btn.textContent = 'Sending…';
     btn.disabled = true;
+    const data = new FormData(form);
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: data });
+      const json = await res.json();
+      if (json.success) {
+        btn.textContent = "✓ Enquiry Sent — We'll ring you back shortly!";
+        btn.style.background = '#2d7a3a';
+        form.reset();
+      } else {
+        btn.textContent = 'Something went wrong — please call us on 0429 575 955';
+        btn.style.background = '#c0392b';
+        btn.disabled = false;
+      }
+    } catch {
+      btn.textContent = 'Something went wrong — please call us on 0429 575 955';
+      btn.style.background = '#c0392b';
+      btn.disabled = false;
+    }
   }
 </script>
 </body>

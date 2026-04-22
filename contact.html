@@ -332,6 +332,9 @@
         <p>Prefer to call? Ring us on <a href="tel:0429575955" style="color:var(--red);font-weight:700;">0429 575 955</a> — it's the fastest way to get an offer. Otherwise, fill in the form below and we'll ring you back.</p>
 
         <form onsubmit="submitContact(event)">
+          <input type="hidden" name="access_key" value="2a97a3c9-7892-4c5b-a3c4-619f7103c810" />
+          <input type="hidden" name="subject" value="New Contact Message — Auto Point Car Removal" />
+          <input type="hidden" name="from_name" value="Auto Point Website" />
           <div class="form-row">
             <div class="form-group">
               <label>First Name *</label>
@@ -571,12 +574,30 @@
     document.getElementById('navLinks').classList.toggle('open');
   });
 
-  function submitContact(e) {
+  async function submitContact(e) {
     e.preventDefault();
-    const btn = e.target.querySelector('button[type="submit"]');
-    btn.innerHTML = '✓ Message Sent! We\'ll be in touch shortly.';
-    btn.style.background = '#2d7a3a';
+    const form = e.target;
+    const btn = form.querySelector('button[type="submit"]');
+    btn.innerHTML = 'Sending…';
     btn.disabled = true;
+    const data = new FormData(form);
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: data });
+      const json = await res.json();
+      if (json.success) {
+        btn.innerHTML = '✓ Message Sent! We\'ll be in touch shortly.';
+        btn.style.background = '#2d7a3a';
+        form.reset();
+      } else {
+        btn.innerHTML = 'Something went wrong — please call us on 0429 575 955';
+        btn.style.background = '#c0392b';
+        btn.disabled = false;
+      }
+    } catch {
+      btn.innerHTML = 'Something went wrong — please call us on 0429 575 955';
+      btn.style.background = '#c0392b';
+      btn.disabled = false;
+    }
   }
 </script>
 </body>

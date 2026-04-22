@@ -548,6 +548,9 @@
           <p>We'll ring you back within business hours.</p>
 
           <form id="quoteForm" onsubmit="submitForm(event)">
+            <input type="hidden" name="access_key" value="2a97a3c9-7892-4c5b-a3c4-619f7103c810" />
+            <input type="hidden" name="subject" value="New Quote Request — Auto Point Car Removal" />
+            <input type="hidden" name="from_name" value="Auto Point Website" />
             <div class="form-row">
               <div class="form-group">
                 <label for="year">Year</label>
@@ -907,12 +910,31 @@
   }
 
   // Quote form
-  function submitForm(e) {
+  async function submitForm(e) {
     e.preventDefault();
-    const btn = e.target.querySelector('button[type="submit"]');
-    btn.textContent = '✓ Request Sent — We\'ll ring you back shortly!';
-    btn.style.background = '#2d7a3a';
+    const form = e.target;
+    const btn = form.querySelector('button[type="submit"]');
+    const originalText = btn.textContent;
+    btn.textContent = 'Sending…';
     btn.disabled = true;
+    const data = new FormData(form);
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: data });
+      const json = await res.json();
+      if (json.success) {
+        btn.textContent = '✓ Request Sent — We\'ll ring you back shortly!';
+        btn.style.background = '#2d7a3a';
+        form.reset();
+      } else {
+        btn.textContent = 'Something went wrong — please call us on 0429 575 955';
+        btn.style.background = '#c0392b';
+        btn.disabled = false;
+      }
+    } catch {
+      btn.textContent = 'Something went wrong — please call us on 0429 575 955';
+      btn.style.background = '#c0392b';
+      btn.disabled = false;
+    }
   }
 </script>
 </body>
