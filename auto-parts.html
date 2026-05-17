@@ -14,8 +14,13 @@
   <meta name="description" content="Perth's used auto parts specialists. Quality tested parts for all makes and models — Isuzu, Toyota, Ford, Holden and more. Unbeatable prices, large inventory. Call 0429 575 955." />
   <meta name="keywords" content="used auto parts Perth, car parts Perth WA, second hand car parts Perth, Isuzu parts Perth, wreckers Perth, auto wreckers Perth WA" />
   <link rel="canonical" href="https://autopointcarremoval.com.au/auto-parts" />
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="styles.css"></noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap"></noscript>
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1757810290824-6ff413b0eb11?w=900&q=75&auto=format" fetchpriority="high">
   <style>
     .parts-hero {
       background: linear-gradient(112deg, #07172e 0%, #1a3b6d 55%, #0d2140 100%);
@@ -27,7 +32,7 @@
       inset: 0;
       background:
         linear-gradient(to right, rgba(7,23,46,0.85) 0%, rgba(10,28,58,0.60) 50%, rgba(7,23,46,0.28) 100%),
-        url('https://images.unsplash.com/photo-1757810290824-6ff413b0eb11?w=1600&q=80') center 50% / cover no-repeat;
+        url('https://images.unsplash.com/photo-1757810290824-6ff413b0eb11?w=900&q=75&auto=format') center 50% / cover no-repeat;
     }
     .parts-hero .perth-glow {
       position: absolute; inset: 0;
