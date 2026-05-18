@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -8,14 +10,13 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-KBRS59FD');</script>
   <!-- End Google Tag Manager -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Quality Used Auto Parts Perth WA – Auto Point Car Removal</title>
   <meta name="description" content="Perth's used auto parts specialists. Quality tested parts for all makes and models — Isuzu, Toyota, Ford, Holden and more. Unbeatable prices, large inventory. Call 0429 575 955." />
   <meta name="keywords" content="used auto parts Perth, car parts Perth WA, second hand car parts Perth, Isuzu parts Perth, wreckers Perth, auto wreckers Perth WA" />
   <link rel="canonical" href="https://autopointcarremoval.com.au/auto-parts" />
   <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="styles.css"></noscript>
+  <link rel="preconnect" href="https://images.unsplash.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -26,20 +27,25 @@
       background: linear-gradient(112deg, #07172e 0%, #1a3b6d 55%, #0d2140 100%);
       position: relative;
     }
-    .parts-hero::before {
-      content: '';
+    .parts-hero .hero-bg {
       position: absolute;
       inset: 0;
-      background:
-        linear-gradient(to right, rgba(7,23,46,0.85) 0%, rgba(10,28,58,0.60) 50%, rgba(7,23,46,0.28) 100%),
-        url('https://images.unsplash.com/photo-1757810290824-6ff413b0eb11?w=1200&q=75&auto=format&fm=webp') center 50% / cover no-repeat;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center 50%;
+      z-index: 0;
+    }
+    .parts-hero .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to right, rgba(7,23,46,0.85) 0%, rgba(10,28,58,0.60) 50%, rgba(7,23,46,0.28) 100%);
+      z-index: 1; pointer-events: none;
     }
     .parts-hero .perth-glow {
       position: absolute; inset: 0;
       background: radial-gradient(ellipse 60% 50% at 80% 50%, rgba(220,140,40,0.10) 0%, transparent 70%);
-      z-index: 1; pointer-events: none;
+      z-index: 2; pointer-events: none;
     }
-    .parts-hero .hero-inner { position: relative; z-index: 2; }
+    .parts-hero .hero-inner { position: relative; z-index: 3; }
     .hero-phone-primary {
       display: inline-flex; align-items: center; gap: 14px;
       background: var(--red); color: var(--white);
@@ -95,6 +101,17 @@
 </nav>
 
 <section class="hero parts-hero" aria-label="Auto Parts Hero">
+  <img class="hero-bg"
+       src="https://images.unsplash.com/photo-1757810290824-6ff413b0eb11?w=1200&q=75&auto=format&fm=webp"
+       srcset="https://images.unsplash.com/photo-1757810290824-6ff413b0eb11?w=640&q=75&auto=format&fm=webp 640w,
+               https://images.unsplash.com/photo-1757810290824-6ff413b0eb11?w=1200&q=75&auto=format&fm=webp 1200w"
+       sizes="100vw"
+       fetchpriority="high"
+       decoding="sync"
+       width="1200" height="675"
+       alt=""
+       aria-hidden="true">
+  <div class="hero-overlay"></div>
   <div class="perth-glow"></div>
   <div class="container">
     <div class="hero-inner" style="padding:88px 0 80px;">
